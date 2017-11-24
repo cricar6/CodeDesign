@@ -1,0 +1,510 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+header{
+    background-color: #303030;
+        display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+header div {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.brand {
+        -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin: 9px 
+}
+
+.menuNav{
+        -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+.brand img {
+    width: 140px;
+    display: inline-block;
+    
+}
+nav {
+    display: inline-block;
+    margin-top: 19px;
+}
+nav  ul li{
+        display: inline-block;
+}
+nav li a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+
+}
+
+.menuSide{
+    display: inline-block;
+    vertical-align: middle;
+        -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin: 11px;
+}
+
+.menuSide .navigator a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.menuSide img{
+    height: 30px;
+}
+
+
+
+
+//maquetacion de sidebar inicia aqui 3
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color:#595959;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color:#595959;
+    font-weight: regular;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+.sidebar{
+    position: fixed;
+    display: inline-block;
+    box-shadow: 0px 0px 20px #999;
+    padding: 20px;
+    margin: 20px;
+    width: 220px;
+   
+}
+
+#cerrar {
+    float: right;
+}
+.up {
+    border-bottom: 1px solid #B2B2B2;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.profileUp{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    border: 2px solid #AA01FF;
+    border-radius: 100px;
+    padding: 5px; 
+}
+
+.name {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.names div{
+    display: inline-block;
+}
+.names p{
+    display: inline-block;
+        margin: 5px 0px;
+}
+
+
+.people {
+    margin-bottom: 20px;
+}
+
+.indicador{
+    width: 5px;
+    height: 5px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.contacts h3{
+    margin: 10px 0px;
+    
+}
+
+
+
+.butDown{
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: gray transparent transparent transparent;
+}
+
+.butDownActive{
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent transparent gray transparent;
+}
+
+.baja {
+    text-align: center;
+}
+
+button{
+    width: 195px;
+    height: 30px;
+    border-radius: 60px;
+    color:white;
+    background-color: #6633FD;
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.mensajes{
+    
+ margin-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+
+    
+    
+}
+.mensajes h3{
+    padding-bottom: 10px;  
+    color: #41d6c9;
+    
+}
+h4{
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color: #303030;
+}
+.msn1{
+    position: absolute;
+    right: 122px;
+    display: block;
+    box-shadow: 0px 0px 20px #999;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+     border-radius: 18.432px;
+}
+
+.butDownM{
+    float: right;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: gray transparent transparent transparent;
+    
+}
+.perfilMsn{
+   
+    float: right;
+    position: absolute;
+    top: 85px;
+    right: 700px;
+        width: 60px;
+    height: 60px;
+    border: 2px solid #AA01FF;
+    border-radius: 100px;
+    padding: 3px; 
+        
+        
+    
+}
+.opciones{
+    background: #303030;
+     position: absolute;
+    display: inline-block;
+    right: 90px;
+    top: 80px;
+    padding: 20px;
+    margin: 20px;
+    width: 25px;
+    height: 60px;
+     border-radius: 18.432px;
+    
+}
+
+.msn2{
+    position: absolute;
+    text-align: center;
+    right: 200px;
+    top: 200.44px;
+    display: block;
+    box-shadow: 0px 0px 20px #999;
+    padding: 20px;
+    margin: 20px;
+    width: 508px;
+     border-radius: 18.432px;
+}
+.perfilMsn2{
+   
+    float: right;
+    position: absolute;
+    top: 220.44px;
+    right: 130.78px;
+        width: 60px;
+    height: 60px;
+    border: 2px solid #AA01FF;
+    border-radius: 100px;
+    padding: 3px; 
+           
+}
+.acciones{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-left: 49px;
+    
+    
+}
+
+.nombre2{
+    float: right;
+    
+    
+}
+.linea{
+   position: relative;
+    left: 146px;
+    margin-top: -6.04px;
+    
+}
+.msn2 h4{
+    position: absolute;
+    padding: 21.95px;
+    left: 175px;
+}
+.verC{
+    position: relative;
+    left: 90px;
+    display: inline-block;
+}
+.playC{
+    position: relative;
+    left: 211.17px;
+}
+.msn2 p{
+    margin-top: 23px;
+    
+    
+}
+a{
+   text-decoration-line: none; 
+}
+.butDownM2{
+    float: left;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: gray transparent transparent transparent;
+}
+h5{
+    position: relative;
+    margin-top: 14px;
+    float: left;
+   font-family: 'Muli', sans-serif;
+    font-size: 10px;
+    color: #303030; 
+}
+.msn3{
+    position: absolute;
+    text-align: center;
+    right: 200px;
+    top: 425px;
+    display: block;
+    box-shadow: 0px 0px 20px #999;
+    padding: 20px;
+    margin: 20px;
+    width: 721px;
+     border-radius: 18.432px;
+}
+.reaccion{
+    position: relative;
+    right: -25px; 
+    top: 23px;
+    float: right;
+}
+.msn4{
+    position: absolute;
+    right: 122px;
+    top: 580px;
+    display: block;
+    box-shadow: 0px 0px 20px #999;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+     border-radius: 18.432px;
+}
+.perfilMsn3{
+   
+    float: right;
+    position: absolute;
+    top: 597px;
+    right: 700px;
+        width: 60px;
+    height: 60px;
+    border: 2px solid #AA01FF;
+    border-radius: 100px;
+    padding: 3px; 
+        
+        
+    
+}
+.hora2 h5{
+    position: relative;
+    float: right;
+}
+.CampoDeTexto{
+    position: absolute;
+    right: 122px;
+    top: 750px;
+    display: flex;
+    box-shadow: 0px 0px 20px #999;
+    padding: 12px;
+    margin: 20px;
+    width: 500px;
+     border-radius: 26px;
+}
+.sinBorde{
+    margin-top: 7px;
+    height: 30px;
+    width: 420px;
+    border: 0;
+}
+.botonG{
+    position: relative;
+    right: -35px;
+    float: right;
+}
+.botonEnviar {
+    position: relative;
+    float: right;
+    top: 700px;
+    right: 33px;
+}
+.botonArchivos{
+    position: relative;
+    float: right;
+    top: 700px;
+    right: 590px
+}
+.botonVideollamada{
+    position: relative;
+    float: right;
+    top: 700px;
+    right: 590px
+}
+.pantalla{
+     position: relative;
+    float: right;
+    top: 700px;
+    right: 590px
+}
+.varios {
+     position: relative;
+    float: right;
+    top: 575px;
+    right: 590px
+}
+
+

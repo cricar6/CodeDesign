@@ -1,0 +1,480 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+header{
+    background-color: #303030;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+    
+    position: fixed;
+}
+header div {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+header li {
+    padding-bottom: 15px;
+
+}
+
+header li:hover{
+    border-bottom: 5px solid #52e2d5;
+    animation-name: stretch;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes stretch{
+    from {
+    border-bottom: 0px solid #52e2d5;
+
+    }
+    
+    to {
+    border-bottom: 5px solid #52e2d5;
+
+    }
+}
+
+.brand {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin: 9px 
+}
+
+.menuNav{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+.brand img {
+    width: 140px;
+    display: inline-block;
+    
+}
+
+    #responsive {
+        display: none;
+    }
+nav {
+    display: inline-block;
+    margin-top: 19px;
+}
+nav  ul li{
+        display: inline-block;
+}
+nav li a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+
+}
+
+.menuSide{
+    display: inline-block;
+    vertical-align: middle;
+        -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin: 11px;
+}
+
+.menuSide .navigator a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menuSide .navigator a:hover{
+    border-radius: 5px;
+	animation-name: appear;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear{
+    from {
+        background: #303030;
+    }
+    
+    to {
+        background: gray;
+    }
+}
+
+.menuSide img{
+    height: 30px;
+}
+
+
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color:#595959;
+    font-weight: bold;
+}
+
+h3{
+        font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #8c8c8c;
+
+}
+
+h5 {
+    font-family: 'Muli', sans-serif;
+    font-size: 10px;
+    color: #8c8c8c;
+}
+
+p {
+        font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color:#595959;
+    font-weight: regular;
+}
+
+.sidebar{
+    position: fixed;
+    display: inline-block;
+    box-shadow: 0px 0px 20px #999;
+    padding: 20px;
+    margin: 75px 20px 20px 20px;
+    width: 220px;
+    background: white;
+} 
+
+#cerrar {
+    float: right;
+}
+.up {
+    border-bottom: 1px solid #B2B2B2;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.profileUp{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    border: 2px solid #AA01FF;
+    border-radius: 100px;
+    padding: 5px; 
+}
+
+.profileUpResponsive{
+    width: 50px;
+    height: 50px;
+    margin: 0 ;
+    border: 2px solid #AA01FF;
+    border-radius: 100px;
+    padding: 5px; 
+    background: white;
+}
+
+.name {
+    text-align: center;
+    margin: 10px 0;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 60px;
+    color:white;
+    background-color: #6633FD;
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.subir {
+    width: 140px;
+    margin: 0px;
+}
+.staticUser{
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.description {
+    margin: 15px 0;
+}
+.description h3 {
+    margin-bottom: 3px;
+}
+
+
+.middle {
+    margin: 20px 0;
+    border-bottom: 1px solid #B2B2B2;
+    padding-bottom: 10px;
+}
+
+.down h3{
+    margin: 10px 0;
+   text-align: left; 
+}
+.down h5{
+    text-align: right;
+}
+.down {
+    text-align: center;
+}
+.projectPreview {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.recognition{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 120px
+}
+
+.mainProject {
+    width: 70%;
+    margin-left: 25%;
+    box-shadow: 0px 0px 20px #999;
+    position: absolute;
+    z-index: -1;
+    margin-top: 75px;
+
+}
+
+.headerProject{
+    background: #526C78;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+
+}
+
+.bodyProject img{
+    width: 100%;
+}
+
+.bodyProject p{
+    padding: 20px;
+}
+
+.bodyProject h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.butHide{
+    padding-top: 80px;
+}
+
+.buttons{
+
+    cursor: pointer;
+}
+.buttonsA{
+    display: none;
+    cursor: pointer;
+}
+
+
+#hiding button{
+    width: 65px;
+    height: 65px;
+    border: 2px violet solid;
+
+    
+}
+
+#showing {
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    border-radius: 50px;
+    float: right;
+}
+
+.noBut{
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+    color:white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.hamburguer, .hamburguerHide {
+     display: none;
+}
+
+.hamburguer button, .hamburguerHide button{
+    width: 35px;
+    height: 35px;
+    margin: 10px 5px;
+    border-radius: 0px;
+    border: 0px;
+    background-color: transparent;
+
+}
+
+#upload {
+    display: none;
+}
+
+@media (max-width: 1420px) {
+  .mainProject {
+      
+    width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    
+    
+    .sidebar{
+        display: none;
+    }
+    
+    .buttonsA {
+        display: block;
+    }
+}
+
+@media (max-width: 980px) {
+    header {
+        height: 55px;
+    }
+    
+    #normal {
+        display: none;
+    }
+    
+    #responsive {
+        display: inline-block;
+    }
+    
+    .brand img {
+    width: 35px;
+    }
+    
+    .menuNav {
+        position: absolute;
+        width: 200px;
+        margin-top: 55px;
+        background: #303030;
+        display: none;
+    }
+    
+    .hamburguer {
+     display: inline-block;
+    }
+    .subir {
+        display: none;
+    }
+
+    #upload {
+    display: inline-block;
+    }
+}
+
