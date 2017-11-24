@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodeDesign-Proyectos</title>
+        <link type="text/css" rel="stylesheet" href="css/proyectos.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,700,900|Roboto+Slab:400,700" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="hamburguer" onclick="showNav()" id="navShow"> 
+                <button type="button"  >
+                    <img src="img/Hamburguer.png" width="35px" height="35px">
+                </button>
+            </div>
+            <div class="hamburguerHide" onclick="hideNav()" id="navHide">
+                <button type="button">
+                    <img src="img/HamburguerSalir.png" width="35px" height="35px">
+                </button>
+            </div>
+            <div class="brand" id="normal"><a href="inicio.html"><img src="img/logo.png" alt="CodeDesign" height="35px"></a></div>
+            <div class="menuNav"  id="hamburg">
+                <nav>
+                    <ul>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="colaboraciones.html">Colaboraciones</a></li>
+                        <li><a href="misiones.html">Misiones</a></li>
+                        <li><a href="chats.html">Mensajes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="brand" id="responsive"><a href="#"><img src="img/logoResponsive.png" alt="CodeDesign" width="35px"></a></div>
+            <div class="menuSide">
+                <div class="navigator">
+                    <button class="subir">Subir proyecto</button>
+                    <a href="#" id="upload"><img src="img/upload.png" alt="Subida"></a>
+                    <a href="#" id="search"><img src="img/search.png" alt="Busqueda"></a>
+                    <a href="#" id="notifications"><img src="img/notifications.png" alt="Notificaciones"></a>
+                    <div class="perfil"><a href="perfil.html">
+                        <img src="img/profile.png" alt="Nathalia Zuluaga" id="photoProfile"></a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="sidebar" id="canHide">
+            <div class="buttonsA" onclick="hideSide()" id="showing"> 
+
+                <img src="img/close.png" width="35px" height="35px">
+
+            </div>
+            <!--Desde aqui se puede editar la side bar-->          
+            <div class="up">
+                <div class="searchBar">
+                    <img src="img/search1.png" alt="" width="30px">
+                    <input type="text" class="search" placeholder="Busca algo...">
+                </div>
+                <div class="userType">
+                    <div class="typeUser">
+                        <div class="typeIcon active" >
+                            <img src="img/designer.png" alt="Elige diseñador" width="30px">
+                        </div>
+                    <h5>Diseñador</h5>
+                    </div>
+                    <div class="typeUser">
+                        <div class="typeIcon desactive">
+                            <img src="img/coder.png" alt="Elige programador" width="30px">
+                        </div>
+                        <h5>Programador</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="middle">
+                
+                <h2>XP del dueño</h2>
+                <div class="xpIndicator">
+                    <img src="img/bar1.png" alt="" width="210px">
+                    <div class="indicatorValue quinientos">
+                        <h5>500xp</h5>
+                    </div>
+                <div class="indicatorValue cienmil">
+                    <h5>+100.000xp</h5>                    
+                </div>
+
+                </div>
+
+                <h2>Especialización</h2>
+                <div class="checkboxes">
+                    <p>Creador de marca</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputCreadorDeMarca" name="" />
+                        <label for="checkboxsInputCreadorDeMarca"></label>
+                    </div>                </div>
+                <div class="checkboxes">
+                    <p>Diagramación</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputDiagramacion" name="" />
+                        <label for="checkboxsInputDiagramacion"></label>
+                    </div>                </div>
+                <div class="checkboxes">
+                    <p>Diseñador gráfico</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputDisenadorGrafico" name="" />
+                        <label for="checkboxsInputDisenadorGrafico"></label>
+                    </div>                </div>
+                <div class="checkboxes">
+                    <p>Ilustrador</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputIlustrador" name="" />
+                        <label for="checkboxsInputIlustrador"></label>
+                    </div>                </div>
+                <div class="checkboxes">
+                    <p>Modelador 3D</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputModelador3D" name="" />
+                        <label for="checkboxsInputModelador3D"></label>
+                    </div>                </div>
+                <div class="checkboxes">
+                    <p>UX</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputUX" name="" />
+                        <label for="checkboxsInputUX"></label>
+                    </div>
+                </div>
+                <div class="downArrow">
+                    <img src="img/down.png" alt="" class="downArrowImg" width="15px">                    
+                </div>
+            </div>
+            <div class="down">
+              <h2>Popularidad</h2>
+
+               <div class="xpIndicator">
+                   
+                    <img src="img/bar2.png" alt="" width="210px">
+                    <div class="indicatorValue cero">
+                        <img src="img/likeState.png" alt="" class="h5icon" width="15px">
+                        <h5>0</h5>
+                    </div>
+                    <div class="indicatorValue unk">
+
+                        <img src="img/likeState.png" alt="" class="h5icon" width="15px">
+                        <h5>+1k</h5> 
+
+                    </div>
+
+                </div>
+                <h2>Ordenar por:</h2>
+                <div class="checkboxes">
+                    <p>Popularidad</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputPopularidad" name="" />
+                        <label for="checkboxsInputPopularidad"></label>
+                    </div>
+
+                    
+
+                </div>
+                <div class="checkboxes">
+                    <p>Orden Alfabético</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" id="checkboxsInputOrdenAlfabetico" name="" />
+                        <label for="checkboxsInputOrdenAlfabetico"></label>
+                    </div>
+                </div>
+                <div class="checkboxes">
+                    <p>Fecha</p>
+                    <div class="checkboxs">
+                        <input type="checkbox" value="1" class="checkboxsInput" name="" />
+                        <label for="checkboxsInput"></label>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="butHide">
+            <div class="buttonsA" onclick="showSide()" id="hiding"> 
+                <div class="profileUpResponsive">
+                    <img src="img/designer.png" alt= "Nath" width="50px"><div class="profileStroke"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="content">
+            <div class="projectsGeneral">
+                <h2 class="titulo">Proyectos destacados</h2>
+
+
+                <div class="allProjects">
+                    <div class="project" id="os">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>1,1k</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>52</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/tipo3D.png" alt="Tipografía 3D" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Tipografía 3D</p>
+                            <h3>Modelado 3D</h3>
+                            <div class="time">
+                                <h5>7 Nov</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project" id="bm">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>1,1k</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>89</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/gudluk.png" alt="Good Luck" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Good Luck</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>8 Jun</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="titulo">Proyectos por búsqueda</h2>
+
+               <div class="projectsBySort">
+                   <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>842</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>17</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/unlugarparami.png" alt="Un lugar para mí" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Un lugar para mí</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>7 Nov</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>497</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>32</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/creandovida.png" alt="Creando Vida" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Creando Vida</p>
+                            <h3>Modelado 3D</h3>
+                            <div class="time">
+                                <h5>5 Nov</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>954</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>53</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/autoretrato.png" alt="Autorretrato" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Autorretrato</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>3 Nov</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>787</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>38</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/annie.png" alt="Annie nuevo personaje" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Annie nuevo personaje</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>28 Oct</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>842</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>17</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/encontrandopaz.png" alt="Encontrando paz" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Encontrando paz</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>27 Oct</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>497</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>32</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/luciernagas.png" alt="Luciernagas" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Luciernagas</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>22 Oct</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>954</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>53</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/dibujo3d.png" alt="Dibuje 3D" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Dibuje 3D</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>12 Oct</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>787</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>38</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/siguecaminando.png" alt="Sigue caminando" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Sigue caminando</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>4 Oct</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>842</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>17</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/aniklaelegida.png" alt="Anik la elegida" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Anik la elegida</p>
+                            <h3>Modelado 3D</h3>
+                            <div class="time">
+                                <h5>29 Sep</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>497</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>32</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/carlottahechicera.png" alt="Carlotta hechizera" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Carlotta hechizera</p>
+                            <h3>Modelado 3D</h3>
+                            <div class="time">
+                                <h5>8 Sep</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>497</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>32</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/galaxiaennuestramanos.png" alt="Galaxia en nuestras manos" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Galaxia en nuestras manos</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>7 Sep</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>345</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>25</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/banoalaorden.png" alt="Baño a la orden" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Baño a la orden</p>
+                            <h3>Ilustración & Fotografía</h3>
+                            <div class="time">
+                                <h5>3 Sep</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>            
+
+        </div>
+        <script>
+            //alert(window.innerWidth || root.clientWidth || body.clientWidth, );
+            function showSide() {
+                document.getElementById('canHide').style.display = "inline-block";
+                document.getElementById('hiding').style.display = "none";
+            }
+            function hideSide() {
+                document.getElementById('canHide').style.display = "none";
+                document.getElementById('hiding').style.display = "block";
+            }
+            function showNav() {
+
+                document.getElementById('hamburg').style.display = "inline-block";
+                document.getElementById('navShow').style.display = "none";
+                document.getElementById('navHide').style.display = "inline-block";
+            }
+            function hideNav() {
+                document.getElementById('hamburg').style.display = "none";
+                document.getElementById('navShow').style.display = "inline-block";
+                document.getElementById('navHide').style.display = "none";
+
+            }
+        </script>
+    </body>
+</html>

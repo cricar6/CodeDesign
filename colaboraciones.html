@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodeDesign-The Temple</title>
+        <link type="text/css" rel="stylesheet" href="css/colaboraciones.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,700|Roboto+Slab:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="hamburguer" onclick="showNav()" id="navShow"> 
+                <button type="button"  >
+                    <img src="img/Hamburguer.png" width="35px" height="35px">
+                </button>
+            </div>
+            <div class="hamburguerHide" onclick="hideNav()" id="navHide">
+                <button type="button">
+                    <img src="img/HamburguerSalir.png" width="35px" height="35px">
+                </button>
+            </div>
+            <div class="brand" id="normal"><a href="inicio.html"><img src="img/logo.png" alt="CodeDesign" height="35px"></a></div>
+            <div class="menuNav"  id="hamburg">
+                <nav>
+                    <ul>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="colaboraciones.html">Colaboraciones</a></li>
+                        <li><a href="misiones.html">Misiones</a></li>
+                        <li><a href="chats.html">Mensajes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="brand" id="responsive"><a href="inicio.html"><img src="img/logoResponsive.png" alt="CodeDesign" width="35px"></a></div>
+            <div class="menuSide">
+                <div class="navigator">
+                   <button class="subir">Subir proyecto</button>
+                    <a href="#" id="upload"><img src="img/upload.png" alt="Subida"></a>
+                    <a href="#" id="search"><img src="img/search.png" alt="Busqueda"></a>
+                    <a href="#" id="notifications"><img src="img/notifications.png" alt="Notificaciones"></a>
+                    <div class="perfil"><a href="perfil.html">
+                        <img src="img/profile.png" alt="Victor Salamanca" id="photoProfile"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="sidebar" id="canHide">
+            <div class="buttonsA" onclick="hideSide()" id="showing"> 
+                
+                    <img src="img/close.png" width="35px" height="35px">
+                
+            </div>
+                      
+            <div class="up">
+            
+
+                <a href="#">
+                    <div class="profileUp"><img src="img/profileVictor.png" alt="Nath Zuluaga" width="85px">
+                        <div class="profileStroke"></div>
+                    </div>
+                </a>
+                <div class="name">
+                    <h2>Victor Salamanca </h2>
+                </div>
+
+                <div class="buttons">
+
+                    <button><img src="img/contact.png" alt="Contactar"></button>
+                    <button><img src="img/add.png" alt="Añadir"></button>
+
+                </div>
+                <div class="staticsUser">
+                    <div class="staticUser">
+                        <img src="img/share.png" alt="Compartir">
+                        <h5>68</h5>
+                    </div>
+                    <div class="staticUser">
+                        <img src="img/follow.png" alt="Seguidores">
+                        <h5>3.2K</h5>
+                    </div>
+                    <div class="staticUser">
+                        <img src="img/mission.png" alt="Trofeos">
+                        <h5>127</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="middle">
+                <div class="description">
+                    <h3>Título del proyecto</h3>
+                    <p>The Temple</p>
+                </div>
+                <div class="description">
+                    <h3>Tiempo Restante</h3>
+                    <p>4 semanas</p>
+                </div>
+                <div class="description">
+                    <h3>Requisitos</h3>
+                    <p>550xp o más<br />Java</p>
+                </div>
+                <div class="description">
+                    <h3>Descripción</h3>
+                    <p>En este proyecto se espera contar con...</p>
+                </div>
+
+            </div>
+            <div class="down">
+                <h3>Otros Proyectos</h3>
+                <a href="#">
+                    <div class="projectPreview">
+                        <img src="img/pry1.png" alt="Cyber Ocupation">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="projectPreview">
+                        <img src="img/pry2.png" alt="Assasin Judge">
+                    </div>
+                </a>
+                <a href="#">
+                   <div class="recognition">
+                       <img src="img/destacado.png" alt="">
+                    </div>
+                    <div class="projectPreview">
+                        <img src="img/pry3.png" alt="The forest">
+                    </div>
+                </a>
+                <a href="proyectos.html"><h5>Ver todo</h5></a>
+            </div>
+
+
+        </div>
+        <div class="mainProject">
+            <div class="headerProject">
+                <h1> The Temple</h1>
+            </div>
+            <div class="bodyProject">
+                <img src="img/TheTempleImg.png" alt="The Temple Preview">
+                <p class="projectDescription">The Temple es un proyecto de un videojuego MOBA, se necesitan programadores experimentados que estén en capacidad de controlar redes y conexiones entre computadores, que ayude con la programación de las animaciones y que sepa manejar entornos tridimensionales</p>
+                <div class="footerProject"> 
+                    <p class="projectDescription">Por Favor entrar en mi perfil y revisar los datos que necesiten sobre mi trabajo</p>
+                    <h2>Gracias</h2>
+                </div>
+            </div>
+            
+        </div>
+        <div class="butHide">
+            <div class="buttonsA" onclick="showSide()" id="hiding"> 
+               <div class="profileUpResponsive">
+                   <img src="img/profileVictor.png" alt= "Victor" width="50px"><div class="profileStroke"></div>
+               
+               </div>
+
+            </div>
+            
+            </div>
+        <script>
+            //alert(window.innerWidth || root.clientWidth || body.clientWidth, );
+            function showSide() {
+                document.getElementById('canHide').style.display = "inline-block";
+                document.getElementById('hiding').style.display = "none";
+            }
+            function hideSide() {
+                document.getElementById('canHide').style.display = "none";
+                document.getElementById('hiding').style.display = "block";
+            }
+            function showNav() {
+
+                document.getElementById('hamburg').style.display = "inline-block";
+                document.getElementById('navShow').style.display = "none";
+                document.getElementById('navHide').style.display = "inline-block";
+            }
+            function hideNav() {
+                document.getElementById('hamburg').style.display = "none";
+                document.getElementById('navShow').style.display = "inline-block";
+                document.getElementById('navHide').style.display = "none";
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodeDesign-Tu perfil</title>
+        <link type="text/css" rel="stylesheet" href="css/perfil.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,700,900|Roboto+Slab:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="hamburguer" onclick="showNav()" id="navShow"> 
+                <button type="button"  >
+                    <img src="img/Hamburguer.png" width="35px" height="35px">
+                </button>
+            </div>
+            <div class="hamburguerHide" onclick="hideNav()" id="navHide">
+                <button type="button">
+                    <img src="img/HamburguerSalir.png" width="35px" height="35px">
+                </button>
+            </div>
+            <div class="brand" id="normal"><a href="inicio.html"><img src="img/logo.png" alt="CodeDesign" height="35px"></a></div>
+            <div class="menuNav"  id="hamburg">
+                <nav>
+                    <ul>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="colaboraciones.html">Colaboraciones</a></li>
+                        <li><a href="misiones.html">Misiones</a></li>
+                        <li><a href="chats.html">Mensajes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="brand" id="responsive"><a href="inicio.html"><img src="img/logoResponsive.png" alt="CodeDesign" width="35px"></a></div>
+            <div class="menuSide">
+                <div class="navigator">
+                    <button class="subir">Subir proyecto</button>
+                    <a href="#" id="upload"><img src="img/upload.png" alt="Subida"></a>
+                    <a href="#" id="search"><img src="img/search.png" alt="Busqueda"></a>
+                    <a href="#" id="notifications"><img src="img/notifications.png" alt="Notificaciones"></a>
+                    <div class="perfil"><a href="perfil.html">
+                        <img src="img/profile.png" alt="Nathalia Zuluaga" id="photoProfile"></a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="sidebar" id="canHide">
+            <div class="buttonsA" onclick="hideSide()" id="showing"> 
+
+                <img src="img/close.png" width="35px" height="35px">
+
+            </div>
+            <!--Desde aqui se puede editar la side bar-->          
+            <div class="up">
+                <a href="#">
+                    <div class="profileUp">
+                        <img src="img/profile.png" alt="Nath Zuluaga" width="85px">
+                        <div class="profileStroke"></div>
+                    </div>
+                </a>
+                <div class="name">
+                    <h2>Nath Zuluaga </h2>
+                    <h3>Diseñadora gráfica</h3>
+
+
+                </div>
+
+                <div class="staticsUser">
+                    <div class="staticUser">
+                        <img src="img/follow.png" alt="Seguidores">
+                        <h5>5K</h5>
+                    </div>
+                    <div class="staticUser">
+                        <img src="img/share.png" alt="Compartir">
+                        <h5>68</h5>
+                    </div>
+                    <div class="staticUser">
+                        <img src="img/follow.png" alt="Seguidores">
+                        <h5>3.2K</h5>
+                    </div>
+                    <div class="staticUser">
+                        <img src="img/mission.png" alt="Trofeos">
+                        <h5>127</h5>
+                    </div>
+                </div>
+
+                <div class="buttons">
+
+                    <button><img src="img/contact.png" alt="Contactar"></button>
+
+                </div>
+            </div>
+
+
+            <div class="middle">
+                <h3> Habilidades</h3>
+
+                <div class="skills">
+                    <div class="back"><img src="img/back.png" alt="" height="11px"></div>
+                    <div class="skill"><img src="img/skill1.png" alt="" width="40px"></div>
+                    <div class="skill"><img src="img/skill3.png" alt="" width="60px"></div>
+                    <div class="skill"><img src="img/skill2.png" alt="" width="40px"></div>
+                    <div class="lineSkill"></div>
+                    <div class="next"><img src="img/next.png" alt="" height="11px"></div>
+                    <div class="description">
+                        <h2>94%</h2>
+                        <p>Trabajo en equipo</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="down">
+                <div class="edit"><img src="img/edit.png" alt="" width="20px"></div>
+                <img src="img/character.png" alt="Your Character" width="105px"> 
+
+            </div>
+
+
+        </div>
+
+
+        <div class="butHide">
+            <div class="buttonsA" onclick="showSide()" id="hiding"> 
+                <div class="profileUpResponsive">
+                    <img src="img/profile.png" alt= "Nath" width="50px"><div class="profileStroke"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="content">
+           <div class="projectsGeneral">
+            <h2 class="titulo">Proyectos destacados</h2>
+                        <a href="#"><h5>Ver todo</h5></a>
+
+            <div class="allProjects">
+                <div class="project" id="os">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>875</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>32</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/OakStreet.png" alt="Oak Street" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Oak Street</p>
+                            <h3>Fotografía</h3>
+                            <div class="time">
+                                <h5>5 dic</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="project" id="bm">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>933</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>26</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/BarcelonaMain.png" alt="Barcelona Main" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Barcelona Main</p>
+                            <h3>Ilustración Fotográfica</h3>
+                            <div class="time">
+                                <h5>16 nov</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+
+               
+                    <div class="project" id="cp">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>940</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>26</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/CapitanPescador.png" alt="Capitan Pescador" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Capitán Pescador</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>7 nov</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="project" id="sua">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>1000</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>34</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/SolounAbrazo.png" alt="Solo un abrazo" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Sólo un abrazo</p>
+                            <h3>Ilustración</h3>
+                            <div class="time">
+                                <h5>27 oct</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" id="ted">
+                        <div class="features"><div class="indicator">
+                            <img src="img/Liks.png" alt="" width="20px">
+                            <h5>1200</h5>
+                            </div>
+                            <div class="indicator">
+                                <img src="img/Commts.png" alt="" width="20px">
+                                <h5>40</h5>
+                            </div></div>
+
+                        <div class="image"><img src="img/TodoesDiseno.png" alt="Todo es diseño" width="300px"></div>
+
+                        <div class="projectDescription">
+                            <p>Todo es diseño</p>
+                            <h3>Hand Lettering</h3>
+                            <div class="Ctime">
+                                <h5>3 ene</h5> 
+                                <img src="img/time.png" alt="" width="20px;">
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+            <h2 class="titulo">Los colaboradores dicen:</h2>
+            <div class="commentContent " >
+                <div class="profileContributor contribution"><img src="img/KimJong.png" alt="Kim Jong" width="65px"></div>
+                <div class="comment contribution">
+                    <h6>Kin Jong</h6>
+                    <h7>+96xp</h7>
+                    <p>Trabajé con Nath en un proyecto para una fundación, tiene mucha creatividad y excelente trabajo en equipo!<br><br><br>Muchos éxitos.</p> <span class="chainResponsive"> Trabajó con Nath en: </span><br><a href="#"><span class="chainResponsive">Apple Website</span></a>
+                </div>
+                <img src="img/Chain.png" alt="Trabajó en:" width="50px" class="contribution noChainResponsive">
+                <div class="contributorProject contribution noChainResponsive">
+                    <div class="contributorFeatures"><div class="indicator">
+                        <img src="img/Liks.png" alt="" width="20px">
+                        <h5>608</h5>
+                        </div>
+                        <div class="indicator">
+                            <img src="img/Commts.png" alt="" width="20px">
+                            <h5>17</h5>
+                        </div>
+                    </div>
+                    <div class="contributorImage"><img src="img/ViveelAtardecer.png" alt="Vive el Atardecer" width="190px"></div>
+                    <div class="contributorProjectDescription">
+                        <p>Vive el atardecer</p>
+                        <h3>Aplicación móvil</h3>
+                        <div class="Ctime">
+                            <h5>18 Ago</h5>
+                            <img src="img/time.png" alt="" width="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commentContent">
+
+                <div class="profileContributor contribution"><img src="img/JoanLambert.png" alt="JoanLambert" width="65px"></div>
+                <div class="comment contribution">
+                    <h6>Joan Lambert</h6>
+                    <h7>+87xp</h7>
+                    <p>Nath tiene muchas capacidades con el diseño, tuvimos una colaboración para desarrollar una página web y obtuvimos muy buenos resultados, es una persona que sabe trabajar en equipo, es muy creativa, y siempre sabe que hacer en el momento correcto. Recomiendo mucho trabajar con ella. <br> Les deseo unos futuros proyectos muy exitosos </p> <span class="chainResponsive"> Trabajó con Nath en: </span><br><a href="#"><span class="chainResponsive">Apple Website</span></a>
+                </div>                 
+
+
+                <div class="chain contribution noChainResponsive">
+                    <img src="img/Chain.png" alt="Trabajó en:" width="50px" >
+                </div>
+                <div class="contributorProject contribution noChainResponsive">
+                    <div class="contributorFeatures"><div class="indicator">
+                        <img src="img/Liks.png" alt="" width="20px">
+                        <h5>599</h5>
+                        </div>
+                        <div class="indicator">
+                            <img src="img/Commts.png" alt="" width="20px">
+                            <h5>11</h5>
+                        </div>
+                    </div>
+
+                    <div class="contributorImage"><img src="img/AppleWebsite.png" alt="" width="190px"></div>
+                    <div class="contributorProjectDescription">
+                        <p>Apple Website</p>
+                        <h3>Website</h3>
+                        <div class="time">
+                            <h5>5 Jun</h5>
+                            <img src="img/time.png" alt="" width="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script>
+            //alert(window.innerWidth || root.clientWidth || body.clientWidth, );
+            function showSide() {
+                document.getElementById('canHide').style.display = "inline-block";
+                document.getElementById('hiding').style.display = "none";
+            }
+            function hideSide() {
+                document.getElementById('canHide').style.display = "none";
+                document.getElementById('hiding').style.display = "block";
+            }
+            function showNav() {
+
+                document.getElementById('hamburg').style.display = "inline-block";
+                document.getElementById('navShow').style.display = "none";
+                document.getElementById('navHide').style.display = "inline-block";
+            }
+            function hideNav() {
+                document.getElementById('hamburg').style.display = "none";
+                document.getElementById('navShow').style.display = "inline-block";
+                document.getElementById('navHide').style.display = "none";
+
+            }
+        </script>
+    </body>
+</html>
